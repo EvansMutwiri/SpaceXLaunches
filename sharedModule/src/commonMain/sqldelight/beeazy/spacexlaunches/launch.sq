@@ -1,0 +1,10 @@
+insert:
+INSERT INTO Launch (flightNumber, missionName, details, launchSuccess, launchDateUTC, patchUrlSmall, patchUrlLarge, articleUrl)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+removeAllLaunches:
+DELETE FROM Launch;
+
+selectAllLaunches:
+SELECT *
+FROM Launch;
